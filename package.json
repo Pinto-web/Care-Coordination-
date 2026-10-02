@@ -1,0 +1,19 @@
+{
+  "name": "care-coordination",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "typecheck": "tsc -b --noEmit tsconfig.base.json",
+    "build": "tsc -b tsconfig.base.json",
+    "clean": "tsc -b --clean tsconfig.base.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

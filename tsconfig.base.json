@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@care/shared": ["packages/shared/src"],
+      "@care/shared/*": ["packages/shared/src/*"],
+      "@care/care-engine": ["packages/care-engine/src"],
+      "@care/care-engine/*": ["packages/care-engine/src/*"]
+    }
+  },
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/care-engine" }
+  ],
+  "files": []
+}

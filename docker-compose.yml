@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: care-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: care_coordination
+    ports:
+      - "5432:5432"
+    volumes:
+      - care_postgres_data:/var/lib/postgresql/data
+volumes:
+  care_postgres_data:
